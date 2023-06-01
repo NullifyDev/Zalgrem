@@ -1,4 +1,4 @@
-<img align="center" src="ZalgremLogo.gif" display="block" height="200">
+<p align="center"><img src="ZalgremLogo.gif" display="block" height="200"></p>
 <br>
 
 # Zalgrem
