@@ -1,4 +1,4 @@
-<center> <img src="ZalgremLogo.gif" display="block" height="200"> </center>
+<img align="center" src="ZalgremLogo.gif" display="block" height="200">
 <br>
 
 # Zalgrem
