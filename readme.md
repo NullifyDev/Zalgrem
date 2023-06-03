@@ -4,10 +4,10 @@
 
 # Zalgrem
 Zalgrem is a Zalgo Remover tool that filters and checks zalgo characters.
-
+<br>
 # What are Zalgo Characters?
 Zalgo text is made up of glitchy letters like this: <br><br>H̷̬̥͂̀̂͘͘e̶̛͓̺̰̻͂͛́͝ľ̶̲̤̗̹̟̲̄̾̈́̿l̶̨̝͈̻͉̏̈́̽͊̚͜ò̶̭̳̈́̎,̶̧̻̝͓̿͋̈͜ ̶̥͓̮̆͋̑̎Ẁ̸͚̭͕̺̰͚̽̃́o̸͙̰̙̦͕̐r̸̖͒͜l̵̛͙͉͇̦̾͐͘d̸͓͍͔͉̠͜͝ <br><br> It's made up of many unicode diacritic marks the marks on top of words in languages like French and Spanish. Some English words like "cliché" have diacritics (above the "e") because they're inherited from other languages. 
-
+<br>
 ## Commands
  |               Commands              | Description | 
  |-------------------------------------|-------------|
@@ -17,7 +17,7 @@ Zalgo text is made up of glitchy letters like this: <br><br>H̷̬̥͂̀̂͘͘e̶
  | `--config <handle> <value>`         | Configuration command. Handles are `whitelist` and `action`|
  | `--help`                            | Gets the list of commands that are available for use |
 
-
+<br>
 ## whitelist
 The whitelist can be reached using `--config whitelist`.
 
