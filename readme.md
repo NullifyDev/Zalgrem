@@ -13,7 +13,7 @@ Zalgo text is made up of unicode letters and characters that create things like 
  |-------------------------------------|-------------|
  |`--get-error <value>`                | Grabs error codes when the value contains a dash `-`. But when it is `list`, it will get the list of all error codes and their descriptions| 
  |`--filter <target string>`           | Filters out the characters that arent in the "allowed characters" list or in the whitelist |
- |`--check <target string>          `  | Checks if there are any characters that are NOT in the allowed Characters list or in the whitelist
+ |`--check <target string>`            | Checks if there are any characters that are NOT in the allowed Characters list or in the whitelist
  | `--config <handle> <value>`         | Configuration command. Handles are `whitelist` and `action`|
  | `--help`                            | Gets the list of commands that are available for use |
 
