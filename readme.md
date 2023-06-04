@@ -18,7 +18,9 @@ Zalgo text is made up of unicode letters and characters that create things like 
  | `--help`                            | Gets the list of commands that are available for use |
 
 <br>
+
 ## whitelist
+
 The whitelist can be reached using `--config whitelist`.
 
 |               whitelist config              |                                          Description                                         |
