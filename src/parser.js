@@ -15,10 +15,8 @@ module.exports = {
                 console.error(`How you managed that? Anyway. Please report this to the developer. It's your command number ${input.indecmdOf(cmd)}`)
                 console.error(`Here's your error token: "0-1"`)
             }
-            let start = performance.now()
             switch (cmd.cmd) {
                 case "get-error":
-                    start = process.now()
                     console.log(err.get(cmd.args))
                     break;
                 case "check":
@@ -50,9 +48,8 @@ module.exports = {
                                         whitelist.export(arguments)
                                         break;
                                     case "toggle":
-                                        console.log({item: arguments, currState: config.whiteList.state})
                                         config.whiteList.state = whitelist.toggle(arguments ? arguments[0] : undefined)
-                                        console.log({item: arguments, currState: config.whiteList.state})
+                                        console.log({ToggledOn: config.whiteList.state})
                                 }
                                 break;
                             case "action":
@@ -88,9 +85,7 @@ module.exports = {
                     console.error(`Zalgrem: no such command: ${cmd.cmd} - command not found.`)
                     break;
             }
-            console.log({cmd: cmd.cmd, time: performance.now() - start})
         })
-        console.log(config)
         fs.writeFileSync("./settings.json", JSON.stringify(config, null, 4))
     }
 }
