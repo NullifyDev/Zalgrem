@@ -1,28 +1,21 @@
-const { inspect } = require('node:util')
 const error = require('./error.js')
 const utils = require('./utils.js')
 
 let cmds = [], cmd = { cmd: "", handles: [], args: [] }
 function submitCmd(inputCmd) {
-    //console.log({ cmd: `${cmd.cmd}`, handles: `${cmd.handles}`, args: `${cmd.args}` })
     cmds.push(inputCmd)
     return { cmd: "",  handles: [], args: []}
 }
 module.exports = {
     lex: (args) => {
-        //console.log({ args: `${args}` })
-        
-            //cmd = { cmd: "", args: [], handles: handles ? handles : [] }
-        //console.log("[CMD TEST]")
         for (var x in args) {
             let a = args[x]
             let b = args[parseInt(x)+1] == undefined ? null : args[parseInt(x)+1]
-            // console.log({a: a, cmd: cmd.cmd})
 
             if (cmd.cmd.length == 0 && a.startsWith("--")) {
                 if (cmd.cmd > 0  && cmd.args.length > 0 || cmd.cmd > 0  && cmd.handles.length > 0) cmds.push(cmd)
                 cmd = { cmd: "", args: [], handles: [] }
-                // console.log(a)
+                
                 switch (a) {
                     case "--get-error":
                     case "--filter":
@@ -105,11 +98,6 @@ module.exports = {
             }
             if (b == null || b.startsWith("--")) cmd = submitCmd(cmd)
         }
-        // console.log("[CMDS CHECK]")
-        // for (let i = 0; i < cmds.length; i++) { 
-        //     // console.log(cmds)
-        //     console.log(inspect({ i: i+1, cmd: cmds[i].cmd, handles: cmds[i].handles, args: cmds[i].args }, {breakLength: 1024, colors: true} ))
-        // }
         return cmds
     }
 }
