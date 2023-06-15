@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\main.js",
-            "args": [  "--get-error", "0-1", "--get-error", "0-0", "--config", "whitelist", "list" ],
+            "args": [],
             "console": "integratedTerminal"
         }
     ]
